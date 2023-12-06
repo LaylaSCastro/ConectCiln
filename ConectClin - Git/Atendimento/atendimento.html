@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ConectClin
+    </title>
+    <link rel="stylesheet" href="CSS/Main.css">
+    <link rel="stylesheet" href="CSS/Header.css">
+    <link rel="stylesheet" href="CSS/Footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="img/LogoWhite.png" alt="" id="imglogo">
+            <h1>ConectClin
+                <p>Conectando cuidado</p>
+            </h1>
+        </div>
+        <nav id="navbar">
+                <a class="navMid" href="../Home/home.html">Home</a>
+                <a class="navMid" href="">Emergência</a>
+                <a class="navMid" href="">Contato</a>
+        </nav>
+        <div id="navleft">
+            <section>
+                <form action="">
+                    <input type="search" placeholder="Procurar" id="searchnav"> 
+                </form>
+            </section>
+            <a href="../Acesso/acesso.html">
+                <button id="acessar">Acessar</button>
+            </a>
+        </div>
+    </header>
+     <main>
+        <div id="texttop">
+            <h1 id="atendimento">Atendimento</h1>
+            <h2>05/10/23 16:32</h2>
+        </div>
+        <div id="master-container">
+            <div id="dados">
+                <div id="fotoPerfil"><img src="./img/perfil.jpg" alt=""></div>
+                <h1 id="nome">Maria Alvarado</h1>
+                <h2 id="prontuario">Prontuário: 098356789</h4>
+                <h3>Gênero</h3>
+                <h4>Feminino</h4>
+                <h3>Idade</h3>
+                <h4>26 Anos</h4>
+                <h3>Cidade</h3>
+                <h4>São Luis - MA</h4>
+                <h3>Contato</h3>
+                <h4>98 90874-7763</h4>
+            </div>
+            <div id="gridMid">
+            <div id="localizacao">
+                <input id="local" type="text" placeholder="Digite seu CEP">
+            </div>
+            <div id="ficha"><div
+                id="cpf"><h2>CPF</h2>
+                <input type="text"></div>
+                <div id="medicamentos"> <h2>Medicamentos utilizados</h2>
+                    <div class="list" id="listMedicamentos">
+                        <input id="input-med" type="text" placeholder="Adicionar">
+                        <button id="btn-med">+</button></div>
+                        <ul class="styleList" id="Medlista">
+                            <li id="Med"></li>
+                        </ul>
+                </div>
+                <div class="list" id="vacinas">
+                    <h2>Histórico de vacina</h2>
+                    <div class="list" id="listVacina">
+                        <input id="input-vac" type="text" placeholder="Adicionar">
+                        <button id="btn-vac">+</button>
+                        <ul class="styleList" id="Vaclist">
+                            <li id="Vac"></li>
+                        </ul>
+                </div>
+                </div>
+            </div>
+            <div class="list" id="sintomas">
+                <div id="dores">      
+                    <h2>Dores</h2>
+                    <div id="listDores">
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <input type="text" placeholder="Adicionar">
+                        <button>+</button>
+                    </div>
+                </div>
+                <div id="febre">
+                    <h2>Febre</h2>
+                    <input type="number">
+                </div>
+                <div id="AltResp">
+                    <h2>Alterações respiratórias</h2>
+                    <div class="list" id="listAltResp">
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <input type="text" placeholder="Adicionar">
+                        <button>+</button>
+                    </div>
+                </div>
+                <div id="dermato"><h2>sintomas dermatológicos</h2>
+                    <div  class="list" id="listDerm">
+                        <ul>
+                            <li></li>
+                        </ul>
+                        <input type="text" placeholder="Adicionar">
+                        <button>+</button></div>
+                </div>
+            </div>
+            <div id="anexo">
+                <h2>Anexar documentos</h2>
+                <input type="file">
+            </div>
+        </div>
+        <div id="gridRigth">
+            <div id="historico">
+                <h2>Histórico de
+                    atendimento</h2>
+                    <div id="listHistorico">
+                        <input id="input-hst" type="text" placeholder="Adicionar">
+                        <button id="btn-hst">+</button>
+                        <ul class="styleList" id="Hstlista">
+                            <li id="Hst">
+                                <h3></h3>
+                            </li>
+                        </ul>
+                    </div>
+            </div>
+            <div id="alergias">
+                <h1>Alergias</h1>
+                <div class="list" id="list">
+                    <ul>
+                        <li></li>
+                    </ul>
+                    <input type="text" placeholder="Adicionar">
+                    <button>+</button>
+                </div>
+            </div>
+            </div>
+            <button id="concluir">Concluir</button>
+        </div>
+     </main>
+    <footer>
+        <div id="Containerfooter">
+        <div id="conectclin">
+            <h1 id="Conect">ConectClin</h1>
+            <h2 id="Agende">Agende consultas, preencha prontuários e receba informações importantes, tudo de forma conveniente e eficiente. Sua jornada de cuidados começa aqui!</h2>
+            <div id="redeSocial">
+                <i class="fa-brands fa-facebook-f"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                
+            </div>
+        </div>
+        <div id="link">
+            <h1>Link</h1>
+            <h2>Home</h2>
+            <h2>Sobre</h2>
+            <h2>Contatos</h2>
+            <h2>Atendimento</h2>
+        </div>
+        <div id="suporte">
+            <h1>Suporte</h1>
+            <h2>FAQ</h2>
+            <h2>Como funciona</h2>
+            <h2>Caracteristicas</h2>
+        </div>
+        <div id="nosContate">
+            <h1>Nos contate</h1>
+            <h2>(98) 90086-4523</h2>
+            <h2>conectclin@gmail.com</h2>
+            <h2>Brasil</h2>
+        </div>
+        </div>
+        <div id="copyR">
+            <h2 id="Copyright">Copyright © ConectClin 2023</h2>
+        </div>
+    </footer>
+    <script src="atendimento.js"></script>
+</body>
+</html>

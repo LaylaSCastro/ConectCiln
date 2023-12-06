@@ -1,0 +1,475 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    outline: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+}
+
+#topContainer {
+    margin-top: 1px;
+    background-image: url('../img/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);   
+    grid-template-columns: repeat(2,1fr);
+    height: 550px;
+
+}
+#top {
+    margin: 150px 0px 0px 130px;
+    width: 700px;
+    color: #fff;
+}
+#textTop, #subTextTop { 
+    color: #fff;
+    font-size: 40px;
+    cursor: default;
+
+}
+
+#subText {
+    color: #fff;
+    font-size: 25px;
+    width: 700px;
+    font-weight: 500;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: default;
+}
+#subTextTop::after {
+    content: '';
+    margin-top: 15px;
+    display: block;
+    height: 2.5px;
+    width: 700px;
+    background-color: #fff;
+}
+#atendimento {
+    margin: 20px 30px 0pc;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: rgb(0, 0, 0,0);
+    border: #fff solid;
+    border-radius: 100px;
+}
+#atendimento:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+#carrossel {
+    height: 330px;
+    width: 265px;
+    overflow: hidden;
+    margin: 140px 0px 10px 120px;
+    border-radius: 25px;
+}
+
+#carrosselContainer {
+    display: flex;
+    width: 400%;
+    height: 330;
+}
+
+#carrosselContainer input{
+    display: none;
+}
+
+.Slide {
+    width: 25%;
+    position: relative;
+    transition: 2s; 
+}
+
+.Slide img {
+    width: 265px;
+}
+
+#navManu {
+position: absolute;
+width: 265px;
+margin-top: -35px;
+display: flex;
+justify-content: center;
+}
+.manuBtn { 
+    border: #fff solid 2px;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 5px;
+    transition: .5s;
+ }
+
+.manuBtn:hover {
+    background-color: #ffffffad;
+}
+
+#Radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#Radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+#Radio3:checked ~ .first{
+    margin-left: -50%;
+}
+
+#navAuto div {
+     border: solid #122d61 2px;
+     padding: 5px;
+     border-radius: 10px;
+     cursor: pointer;
+     transition: .5s;
+     margin: 0px 5px;
+}
+
+#navAuto {
+    position: absolute;
+    width: 265px;
+    margin-top: 305px;
+    display: flex;
+    justify-content: center;
+}
+
+#Radio1:checked ~ #navAuto #autoBtn1{
+    background-color: #ffffffad;
+}
+
+#Radio2:checked ~ #navAuto #autoBtn2{
+    background-color: #ffffffad;
+}
+
+#Radio3:checked ~ #navAuto #autoBtn3{
+    background-color: #ffffffad;
+}
+
+.agendamento {
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #2B3E61, #3C5E9C);
+    height: 125px;
+    width: 650px;
+    display: grid;
+    margin: -50px auto 0px 0px;   
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    border-radius: 0px 25px 25px 0px;
+    justify-content: center;
+    transition: .5s;
+    
+}
+
+#h1Agendamento {
+    grid-column: 1/4;
+    font-size: 20px;
+    color: #fff;
+    font-weight:500;
+    margin: 15px 0px 10px 60px;
+    font-weight:500;
+}
+.input {
+    background-color: #ffffff70;
+    margin: 10px;
+    border: #fff solid 2px;
+    padding: 8px 8px 8px 25px;
+    border-radius: 25px;
+}
+
+::placeholder{
+    color: #ffffff;
+    font-weight: lighter;
+}
+
+#procurar {
+    background-color: #fff;
+    padding: 5px 5px 6px 5px;
+    color: #2B3E61;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    width: 130px;
+    height: 35px;
+    margin: 10px 0px 0px 20px;
+    font-size: 15px;
+} 
+#procurar:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+    transition: 0.5s;
+}
+#inputs {
+    background-color: transparent;
+    display: flex;
+    margin: 4px 20px 0px 30px;
+    
+}
+.arrow {
+    display: flex;
+    justify-content: flex-end;
+    margin: 0px 0px 37px 10px ;
+    width: 15;
+    height: 15;
+    color: #fff;
+    transition: transform .5s;
+    rotate: 180deg;
+}
+
+.arrow:hover {
+    cursor: pointer;
+}
+.oculto {
+    width: 35px;
+}
+.oculto .arrow {
+    display: flex;
+    margin: 55px 0px 0px 15px;
+    transform: rotate(-180deg) ;
+}
+.oculto #containAgendamento {
+    display: none;
+}
+#btn:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+#local {
+    background-position: 6px 50%;
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-image: url('../img/searchw.svg');
+}
+#hospital {
+    background-position: 10px 50%;
+    background-repeat: no-repeat;
+    background-size: 10px;
+    background-image: url('../img/location.svg');
+}
+
+#topicos {
+    display: flex;
+    justify-content: center;
+    cursor: default;
+}
+
+.topic:hover {
+    transition: .2s;
+    transform: scale(1.02);
+    cursor: default;
+}
+.topic {
+    border: #183979 solid;
+    margin: 90px 10px 0px 10px;
+    padding: 20px;
+    font-size: 13px;
+    border-radius: 25px;
+    color: #183979;
+    background-color: #d7d7d775;
+    width: 350px;
+    height: 225px;
+}
+
+.imgtp {
+    font-size: 27px;
+    display: flex;
+}
+.h2Topic  {
+    font-size: 21px;
+    width: 300px;
+    margin: 0px 0px 10px 8px;
+}
+#divdepartamento {
+    color: #183979;
+    cursor: default;
+}
+#h3Topic {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 16px;
+    margin: 0px 0px 9px 0px;
+}
+
+#topicoDepartamento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin: 40px 0px 60px 0px;
+}
+#topicoDepartamento div::after {
+    content: ''; 
+    height: 3px;
+    border-radius: 25px;
+    background-color: #122d61;
+    width: 90%;
+    transform: scaleX(0);
+    transition: transform .4s;
+    transform-origin: left;
+}
+
+#topicoDepartamento div:hover::after {
+    transform: scaleX(1);
+    transform-origin: right;
+}
+#topicoDepartamento h2 {
+    margin: 10px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#topicoDepartamento i{
+    font-size: 25px;
+}
+#departamento{ 
+    display: flex;
+    justify-content: center;
+    font-weight: 800;
+    margin: 50px 0px 10px 0px;
+}
+#departamento ::after {
+    content: '';
+    margin-top: 9px;
+    display: block;
+    height: 2.5px;
+    width: 270px;
+    background-color: #183979;
+}
+#imgDepartamento {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+#imgDepartamento i {
+    margin: 0px 42px 0px 45px;
+    font-size: 30px;
+}
+#psicologia, #pediatria, #otorrinolaringologia, #oftalmologia, #neurologia, #cardiologia, #clinicaGeral{
+    display: grid;
+    grid-template-rows: repeat(2,1fr);
+    place-items: center;
+    font-size: 10px;
+}
+.containerModal {
+    opacity: 1;
+    pointer-events: all;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #00000080;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    transition: .5s;
+
+}
+.modalOculto {
+    opacity: 0%;
+    pointer-events: none;
+}
+
+#modal {
+    position: fixed;
+    top: 11%;
+    background-color: #fff;
+    height: 550px;
+    width: 400px;
+    border-radius: 20px;
+    display: grid;
+    place-items: center;
+    
+}
+
+#modal svg {
+    height: 60px;
+}
+#modal h2 {
+    display: flex;
+    justify-content: center;
+    color: #183979;
+    font-weight: 500;
+}
+
+#modal p {
+    display: flex;
+    justify-content: center;
+}
+#modal h1 {
+    color: #183979;
+    font-size: 20px;
+}
+#buttons-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    
+}
+.btn-modal {
+    background-color: #ececec;
+    border: #183979 solid 2px;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.2s;
+
+}
+
+.btn-modal:hover {
+
+    background-color: #ececec77 ;
+    transform: scale(1.01);
+
+}
+
+#modal a {
+    color: #183979;
+}
+
+#modal i {
+    margin: 10px;
+    font-size: 14px;
+}
+
+#confirmar {
+    background-color: #183979;
+    padding: 8px 30px;
+    border: none;
+    border-radius: 20px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 17px;
+    margin-bottom: 20px;
+    transition: 0.5s;
+}
+
+#confirmar:hover {
+    background-color: #122d61;
+    transform: scale(1.01);
+    cursor: pointer;
+}
+
+#iconx i {
+    font-size: 16px;
+    margin: 0px 0px 0px 360px;
+    color: #122d61;
+    transition: 0.3s;
+}
+
+#iconx i:hover {
+    cursor: pointer;
+    transform: scale(0.8);
+}
+
+

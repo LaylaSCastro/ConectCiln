@@ -1,0 +1,60 @@
+footer {
+    background-color: #121D30;
+    height: 250px;
+
+}
+#Containerfooter {
+    color: #fff;
+    background-color: #121D30;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    margin: 0px 0px 60px 0px;
+    place-items: center;
+    height: 180px; 
+}
+footer div h1 {
+    font-size: 25px;
+}
+footer div h2 {
+    font-size: 15px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+#Agende {
+    width: 250px;
+}
+#copyR {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B121E;
+    
+}
+#Copyright {
+    color: #fff;
+    font-weight: 100;
+    margin: 0px 0px 4px 0px;
+}
+#conectclin {
+    margin-top: 30px;
+    font-size: 10px;
+    width: 150px;
+}
+.fa-brands {
+    font-size: 25px;
+    margin: 3px;
+    margin-top: 10px;
+
+}
+#redeSocial{
+    width: 150px;
+}
+#link {
+    margin-left: 80px;
+}
+#suporte {
+    margin-bottom: 29px;
+}
+#nosContate {
+    margin-bottom: 28px;
+}

@@ -1,0 +1,104 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+}
+
+header {
+    background-image: linear-gradient(90deg,#9FC5FF, #183979);
+    height: 25px;
+    width: 100vw;
+    position: fixed;
+    padding: 2px 0px 0px 10px;
+}  
+i {
+    transform: rotate(180deg);
+    color: #fff;
+    transition: 0.5s;
+}
+i:hover {
+    transform: scale(1.02);
+
+}
+main {
+    display: flex;
+}
+#principal {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+#background {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#logo svg {
+    height: 80px;
+    margin: 20px 0px 0px 0px;
+}
+
+#logo {
+    margin:40px 0px 0px -10px;
+    place-items: center;
+    display: grid;
+    transition: .5s;
+}
+
+#logo h1{
+    color: #183979;
+    font-size: 20px;
+    font-weight: 600;
+}
+#logo p {
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+#textPrin {
+    color: #183979;
+    font-size: 27px;
+    margin: -20px 0px 0px 0px;
+}
+
+#textSub{
+    color: #7c7c7c;
+    font-weight: 400;
+    width: 300px;
+    text-align: center;
+    line-height: 29px;
+    margin: -40px 0px 0px 0px;
+
+}
+#btnContainer a{
+    margin: 10px;
+    text-decoration: none;
+}
+
+
+ .btn {
+    background-color: #2B3E61;
+    padding: 5px 5px 6px 5px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    width: 140px;
+    height: 45px;
+    margin: 0px 0px 100px 0px;
+    font-size: 18px;
+    } 
+
+.btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+#cadastro {
+    border: #183979 solid 2px;
+    background-color: transparent;
+    color: #183979;
+}

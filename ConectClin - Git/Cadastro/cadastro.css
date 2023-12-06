@@ -1,0 +1,137 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans';
+}
+
+header {
+    background-image: linear-gradient(90deg,#9FC5FF, #183979);
+    height: 25px;
+    width: 100vw;
+    position: fixed;
+    padding: 2px 0px 0px 10px;
+}  
+i {
+    transform: rotate(180deg);
+    color: #fff;
+    transition: 0.5s;
+}
+i:hover {
+    transform: scale(1.02);
+
+}
+main {
+    display: flex;
+}
+#principal {
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+#background {
+    height: 100vh;
+    object-fit: cover;
+}
+
+#logo {
+    margin:0px 0px 0px -10px;
+    place-items: center;
+    display: grid;
+    transition: .5s;
+
+}
+
+#logo h1{
+    color: #183979;
+    font-size: 20px;
+    font-weight: 600;
+}
+#logo svg {
+    height: 80px;
+    margin: 20px 0px 0px 0px;
+}
+#logo p {
+    color: #6b6b6b;
+    font-weight: 300;
+}
+
+#bemvindo {
+    color: #183979;
+    font-size: 27px;
+    margin:-70px 0px 0px 0px;
+}
+#inputs {
+    color: #183979;
+    margin: -90px 0px 0px 0px;
+    font-size: 14px;
+}
+input {
+    width: 350px;
+    height: 40px;
+    border-radius: 25px;
+    border: #2B3E61 solid 2px;
+    padding: 0px 10px 0px 30px;
+}
+
+#inputs h2 {
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+span {
+    display: none;
+    margin:5px 0px 0px 20px;
+    color: #e63636;
+}
+
+ #nome  {
+    margin: 0px 0px 0px 10px;
+    background-image: url(img/person.svg);
+    background-position: 8px 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+ }
+
+ #email  {
+    margin: 0px 0px 0px 10px;
+    background-image: url(img/email-outline.svg);
+    background-position: 8px 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+ }
+
+ #senha  {
+    margin: 0px 0px 0px 10px;
+    background-image: url(img/padlock.svg);
+    background-position: 8px 50%;
+    background-repeat: no-repeat;
+    background-size: 20px;
+ }
+
+ #btn {
+    background-color: #2B3E61;
+    padding: 5px 5px 6px 5px;
+    color: #fff;
+    border-radius: 50px;
+    border: none;
+    font-weight: 700;
+    width: 140px;
+    height: 45px;
+    font-size: 18px;
+    } 
+
+#btn:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: 0.3s;
+}
+#btn[disabled] {
+    opacity: 0.7;
+    transform: scale(1);
+}
+
+a {
+    margin: -30px 0px 60px 0px;
+} 
